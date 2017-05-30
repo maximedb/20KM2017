@@ -37,7 +37,7 @@
 				<p class="lead mb-3">78% percent of the participants crossed the finish line. 77% of the women made it to the finish line, 79% for the men.</p>
 			</div>
 			<div class="col-md-6 max-200">
-				<canvas id="finished" width="500" height="300"></canvas>
+				<div><canvas id="finished" width="500" height="300"></canvas></div>
 			</div>
 		</section>
 		
@@ -48,7 +48,7 @@
 				For women only it is 2:13, whereas for men only it is 1:55.</p>
 			</div>
 			<div class="col-md-6">
-				<canvas id="howfast" width="500" height="300"></canvas>
+				<div><canvas id="howfast" width="500" height="300"></canvas></div>
 			</div>
 		</section>
 		
@@ -58,7 +58,7 @@
 				<p class="lead mb-3">As expected, the first box is the fastest and the last one is the slowest. What is less clear is the variation among runners in the same box. Runners in the first boxes will tend to run at the same pace, whereas runners in the last boxes will not (not shown on the graph). In a nutshell, being in the box one confirms you run fast, whereas being in the box 6 does not confirm you run slow.</p>
 			</div>
 			<div class="col-md-6">
-				<canvas id="bybox" width="500" height="300"></canvas>
+				<div><canvas id="bybox" width="500" height="300"></canvas></div>
 			</div>
 		</section>
 		
@@ -68,7 +68,7 @@
 				<p class="lead mb-3">The relationship between the age and run time is not as strong as I previously expected. On average, a 5 year increase in your age will only increase your run time by 2%.</p>
 			</div>
 			<div class="col-md-6">
-				<canvas id="byage" width="500" height="300"></canvas>
+				<div><canvas id="byage" width="500" height="300"></canvas></div>
 			</div>
 		</section>
 	</div>
@@ -145,7 +145,6 @@
 			    type: 'bar',
 			    data: data_2,
 			    options: {
-			    	
 			    	scales: {
 			            xAxes: [{
 			                stacked: true
