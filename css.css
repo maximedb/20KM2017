@@ -14,3 +14,15 @@ section {
 canvas {
 	 margin: auto;
 }
+
+canvas {
+	margin: 0px 10px;
+}
+
+.lead {
+	opacity: 0.8;
+}
+
+.mb-3 {
+	margin-bottom: 3rem;
+}

@@ -27,14 +27,14 @@
 			<div class="col-md-12">
 				<h1 class="text-center">🏃</h1>
 				<h1 class="text-center">20KM Brussels</h1>
-				<p class="lead">This is a quick & dirty data analysis of the 20KM Brussels' results. Feel free to contact me if you want more information. The source code is available on github.</p>
+				<p class="lead mb-3">This is a quick & dirty data analysis of the 20KM Brussels' results. Feel free to contact me if you want more information. The source code is available on github.</p>
 			</div>
 		</section>
 
 		<section class="row">
 			<div class="col-md-6">
 				<h2>Who made it ?</h2>
-				<p class="lead">78% percent of the participants crossed the finish line. 77% of the women made it to the finish line, 79% for the men.</p>
+				<p class="lead mb-3">78% percent of the participants crossed the finish line. 77% of the women made it to the finish line, 79% for the men.</p>
 			</div>
 			<div class="col-md-6 max-200">
 				<canvas id="finished" width="500" height="300"></canvas>
@@ -44,7 +44,7 @@
 		<section class="row">
 			<div class="col-md-6">
 				<h2>How fast ?</h2>
-				<p class="lead">The average time needed to complete the 20km is 2:00 for both men and women.<br> 
+				<p class="lead mb-3">The average time needed to complete the 20km is 2:00 for both men and women.<br> 
 				For women only it is 2:13, whereas for men only it is 1:55.</p>
 			</div>
 			<div class="col-md-6">
@@ -55,7 +55,7 @@
 		<section class="row">
 			<div class="col-md-6">
 				<h2>Box analysis</h2>
-				<p class="lead">As expected, the box 1 is the fastest and the box 6 the slowest. Although not drawn on the graph, the variability in the run time is also increasing with the box number: 16.90 for the box 1, to 23 for the box 6. In a nutshell, being in the box one confirms you run fast, whereas being in the box 6 does not confirm you run slow.</p>
+				<p class="lead mb-3">As expected, the first box is the fastest and the last one is the slowest. What is less clear is the variation among runners in the same box. Runners in the first boxes will tend to run at the same pace, whereas runners in the last boxes will not (not shown on the graph). In a nutshell, being in the box one confirms you run fast, whereas being in the box 6 does not confirm you run slow.</p>
 			</div>
 			<div class="col-md-6">
 				<canvas id="bybox" width="500" height="300"></canvas>
@@ -65,7 +65,7 @@
 		<section class="row">
 			<div class="col-md-6">
 				<h2>Age analysis</h2>
-				<p class="lead">The relationship between the age and the run time is not as strong as I previously expected. It is even start by decreasing for the women. On average, gaining 5 years will make increase your run time by 2%.</p>
+				<p class="lead mb-3">The relationship between the age and run time is not as strong as I previously expected. On average, a 5 year increase in your age will only increase your run time by 2%.</p>
 			</div>
 			<div class="col-md-6">
 				<canvas id="byage" width="500" height="300"></canvas>
@@ -111,7 +111,11 @@
 			                stacked: true
 			            }],
 			            yAxes: [{
-			                stacked: true
+			                stacked: true,
+			                scaleLabel: {
+					            display: true,
+					            labelString: '# of people'
+				          	}
 			            }]
 			        }
 			    }
@@ -147,7 +151,11 @@
 			                stacked: true
 			            }],
 			            yAxes: [{
-			                stacked: true
+			                stacked: true,
+			                scaleLabel: {
+					            display: true,
+					            labelString: '# of people'
+				          	}
 			            }]
 			        }
 			    }
@@ -183,7 +191,11 @@
 				        yAxes: [{
 				            ticks: {
 				                beginAtZero: true
-				            }
+				            },
+				            scaleLabel: {
+					            display: true,
+					            labelString: 'minutes'
+				          	}
 				        }]
 				    }
 			    }
@@ -219,7 +231,11 @@
 				        yAxes: [{
 				            ticks: {
 				                beginAtZero: true
-				            }
+				            },
+				            scaleLabel: {
+					            display: true,
+					            labelString: 'minutes'
+				          	}
 				        }]
 				    }
 			    }
