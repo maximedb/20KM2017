@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>20KM Brussels</title>
+    <meta name="description" content="Quick & dirty data analysis of the 20KM Brussels' results">
 
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
@@ -27,14 +28,15 @@
 			<div class="col-md-12">
 				<h1 class="text-center">🏃</h1>
 				<h1 class="text-center">20KM Brussels</h1>
-				<p class="lead mb-3">This is a quick & dirty data analysis of the 20KM Brussels' results. Feel free to contact me if you want more information. The source code is available on github.</p>
+				<p class="lead mb-3">This is a quick & dirty data analysis of the 20KM Brussels' results, available <a href="http://prod.chronorace.be/Classements/Classement20km2017.aspx?eventId=1187794680566157&lng=FR">here</a>. The source code is available on github.</p>
 			</div>
 		</section>
 
 		<section class="row">
 			<div class="col-md-6">
-				<h2>Who made it ?</h2>
-				<p class="lead mb-3">78% percent of the participants crossed the finish line. 77% of the women made it to the finish line, 79% for the men.</p>
+				<h2>Did you finish ?</h2>
+				<p class="lead mb-3">28690 out of 36538 (78%) did finish the run: 77% of the women made it to the finish line, 
+				79% for the men.</p>
 			</div>
 			<div class="col-md-6 max-200">
 				<div><canvas id="finished" width="500" height="300"></canvas></div>
@@ -44,7 +46,7 @@
 		<section class="row">
 			<div class="col-md-6">
 				<h2>How fast ?</h2>
-				<p class="lead mb-3">The average time needed to complete the 20km is 2:00 for both men and women.<br> 
+				<p class="lead mb-3">The average time needed to complete the run is 2 hours 00 minutes.<br> 
 				For women only it is 2:13, whereas for men only it is 1:55.</p>
 			</div>
 			<div class="col-md-6">
@@ -55,7 +57,11 @@
 		<section class="row">
 			<div class="col-md-6">
 				<h2>Box analysis</h2>
-				<p class="lead mb-3">As expected, the first box is the fastest and the last one is the slowest. What is less clear is the variation among runners in the same box. Runners in the first boxes will tend to run at the same pace, whereas runners in the last boxes will not (not shown on the graph). In a nutshell, being in the box one confirms you run fast, whereas being in the box 6 does not confirm you run slow.</p>
+				<p class="lead mb-3">As expected, the first box is the fastest and the last one is the slowest. 
+				What is less clear is the variation among runners in the same box. 
+				Runners in the first boxes will tend to run at the same pace, whereas runners in the last boxes will not 
+				(not shown on the graph). In a nutshell, being in the first boxes confirms you run fast, whereas being in the last boxes
+				 does not confirm you run slow.</p>
 			</div>
 			<div class="col-md-6">
 				<div><canvas id="bybox" width="500" height="300"></canvas></div>
@@ -65,7 +71,8 @@
 		<section class="row">
 			<div class="col-md-6">
 				<h2>Age analysis</h2>
-				<p class="lead mb-3">The relationship between the age and run time is not as strong as I previously expected. On average, a 5 year increase in your age will only increase your run time by 2%.</p>
+				<p class="lead mb-3">The relationship between the age and run time is not as strong as expected. 
+				On average, a 5 year increase in your age will only increase your run time by 2%.</p>
 			</div>
 			<div class="col-md-6">
 				<div><canvas id="byage" width="500" height="300"></canvas></div>
